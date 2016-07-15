@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Address Book</title>
+  </head>
+  <body>
+    <h1>Contacts:</h1>
+    <ul>
+      @foreach(var contact in Model)
+      {
+        <li>@contact.GetName()</li>
+        <li>@contact.GetAddress()</li>
+        <li>@contact.GetPhoneNumber()</li>
+      }
+      <br>
+      <br>
+
+      <a href="/">Return to Home</a>
+    </ul>
+  </body>
+</html>

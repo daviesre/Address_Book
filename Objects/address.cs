@@ -6,16 +6,16 @@ namespace AddressBook.Objects
   public class Contact
   {
 //Set strings
+    private static List<Contact> _instances = new List<Contact> {};
     private string _name;
     private string _phoneNumber;
     private string _address;
-    private static List<Book> _instances = new List<Book> {};
 //Constructor
-    public Book (string name, string phone, string address)
+    public Contact (string newname, string newphone, string newaddress)
     {
-      _name = name;
-      _phoneNumber = phone;
-      _address = address;
+      _name = newname;
+      _phoneNumber = newphone;
+      _address = newaddress;
     }
 //Getters and Setters
     public string GetName()
@@ -43,9 +43,19 @@ namespace AddressBook.Objects
       return _address;
     }
 
-    public void SetAddress(string address)
+    public void SetAddress(string newAddress)
     {
       _address = newAddress;
+    }
+
+    public static List<Contact> GetAll()
+    {
+      return _instances;
+    }
+
+    public void Save()
+    {
+      _instances.Add(this);
     }
   }
 }

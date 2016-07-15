@@ -5,8 +5,6 @@
     <title>Address Book</title>
   </head>
   <body>
-    <h1>Address Book</h1>
-    View all contacts
-    Add a new contact
+    <h1>View contacts</h1>
   </body>
 </html>

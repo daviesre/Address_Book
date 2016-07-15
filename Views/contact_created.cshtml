@@ -5,18 +5,15 @@
     <title>Address Book</title>
   </head>
   <body>
-    <h1>Contacts:</h1>
+    <h1>You created a contact!</h1>
     <ul>
-      @foreach(var contact in Model)
-      {
-        <li>@contact.GetName()</li>
-        <li>@contact.GetAddress()</li>
-        <li>@contact.GetPhoneNumber()</li>
-      }
-      <br>
-      <br>
-
-      <a href="/">Return to Home</a>
+      <li>@contact.GetName()</li>
+      <li>@contact.GetAddress()</li>
+      <li>@contact.GetPhoneNumber()</li>
     </ul>
+    <br>
+    <br>
+      <a href="/address_book_view.cshtml">View all contacts in address book</a>
+      <a href="/">Return to Home</a>
   </body>
 </html>

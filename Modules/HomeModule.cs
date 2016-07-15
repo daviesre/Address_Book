@@ -18,6 +18,11 @@ namespace AddressBook
         List<Contact> allContacts = Contact.GetAll();
         return View["/contact_created.cshtml", allContacts];
       };
+
+      Get["/address_book_view"] = _ => {
+        List<Contact> allContacts = Contact.GetAll();
+        return View["/address_book_view.cshtml", allContacts];
+      };
     }
   }
 }

@@ -52,15 +52,15 @@ namespace AddressBook.Objects
     {
       return _instances;
     }
-
+// Save
     public void Save()
     {
       _instances.Add(this);
     }
-
-    // public void Clear(List<Contact> list)
-    // {
-    //   list.Clear();
-    // }
+// Remove
+    public static void DeleteAll()
+    {
+      _instances.Clear();
+    }
   }
 }

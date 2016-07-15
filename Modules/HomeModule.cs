@@ -10,7 +10,7 @@ namespace AddressBook
     {
       Get["/"] = _ => View["index.cshtml"];
 
-      Get["/address_book_add"] = _ =>View["/address_book_add.cshtml"];
+      Get["/address_book_add"] = _ => View["/address_book_add.cshtml"];
 
       Post["/contact_created"] = _ => {
         Contact newContact = new Contact(Request.Form["name"], Request.Form["phonenumber"], Request.Form["address"]);
@@ -24,9 +24,8 @@ namespace AddressBook
       };
 
       Post["/contacts_deleted"] = _ => {
-        List<Contact> allContacts = Contact.GetAll();
-        allContacts.Clear();
-        return View["/contacts_deleted.cshtml", allContacts];
+        Contact.DeleteAll();
+        return View["/contacts_deleted.cshtml"];
       };
     }
   }

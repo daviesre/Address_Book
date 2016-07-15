@@ -7,13 +7,13 @@
   <body>
     <h1>You created a contact!</h1>
     <ul>
-      <li>@contact.GetName()</li>
-      <li>@contact.GetAddress()</li>
-      <li>@contact.GetPhoneNumber()</li>
+      <h2>Name: @Model.GetName()</h2>
+      <h2>Address: @Model.GetAddress()</h2>
+      <h2>Phone Number: @Model.GetPhoneNumber()</h2>
     </ul>
     <br>
     <br>
-      <a href="/address_book_view.cshtml">View all contacts in address book</a>
+      <a href="/address_book_view">View all contacts in address book</a>
       <a href="/">Return to Home</a>
   </body>
 </html>

@@ -39,10 +39,10 @@ Contact Russ Davies at russdavies392@gmail.com for any further support.
 
 ## Technologies Used
 
-C#
-HTML
-Nancy
-Razor
+* C#
+* HTML
+* Nancy
+* Razor
 
 ### License
 

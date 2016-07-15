@@ -57,5 +57,10 @@ namespace AddressBook.Objects
     {
       _instances.Add(this);
     }
+
+    // public void Clear(List<Contact> list)
+    // {
+    //   list.Clear();
+    // }
   }
 }

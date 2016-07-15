@@ -13,12 +13,23 @@
       <li>@contact.GetAddress()</li>
       <li>@contact.GetPhoneNumber()</li>
     }
+    <br>
+    <br>
 
     <form action="/address_book_add" method="get">
       <button type="submit">Add a new contact</button>
     </form>
+
     <br>
     <br>
+
+    <form action="/contacts_deleted" method="post">
+      <button type="submit" name="button">Clear all contacts</button>
+    </form>
+
+    <br>
+    <br>
+
     <form action="/" method="get">
       <button type="submit">Return to main page</button>
     </form>
